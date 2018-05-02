@@ -12,9 +12,13 @@ namespace ObjectCompare
         {
             TestClass c1 = GetModelTestClass();
             TestClass c2 = GetModelTestClass();
-            //c2.OtherCalss.Param1 = "para1 modify";
+            c2.OtherCalss.Param1 = "para1 modify";
 
-            bool result = ObjectHelper.Compare<TestClass>(c1, c2, typeof(TestClass));
+            //深度比较1：各属性字段这个比较
+            //bool result = ObjectHelper.Compare<TestClass>(c1, c2, typeof(TestClass));
+
+            //深度比较2：先序列化为二进制数组，然后md5，进行比较
+            bool result = ObjectHelper.Compare(c1, c2);
             Console.WriteLine(result);
 
             Console.ReadKey();
@@ -32,6 +36,7 @@ namespace ObjectCompare
     }
 
 
+    [Serializable]
     public class TestClass
     {
         public TestClass()
@@ -46,17 +51,17 @@ namespace ObjectCompare
 
         public ExClass2 OtherCalss2;
     }
-
+    [Serializable]
     public class ExClass
     {
         public string Param1;
 
         public string Param2;
     }
-
+    [Serializable]
     public class ExClass2
     {
-        public string P1;
+        public string P1 { get; set; }
 
         public string P2;
     }

@@ -4,3 +4,9 @@ E:\MyProject\ObjectCompare\ObjectCompare\bin\Debug\ObjectCompare.pdb
 E:\MyProject\ObjectCompare\ObjectCompare\obj\Debug\ObjectCompare.csprojResolveAssemblyReference.cache
 E:\MyProject\ObjectCompare\ObjectCompare\obj\Debug\ObjectCompare.exe
 E:\MyProject\ObjectCompare\ObjectCompare\obj\Debug\ObjectCompare.pdb
+E:\MyProject\ObjectCompare\ObjectCompares\ObjectCompare\bin\Debug\ObjectCompare.exe.config
+E:\MyProject\ObjectCompare\ObjectCompares\ObjectCompare\obj\Debug\ObjectCompare.exe
+E:\MyProject\ObjectCompare\ObjectCompares\ObjectCompare\obj\Debug\ObjectCompare.pdb
+E:\MyProject\ObjectCompare\ObjectCompares\ObjectCompare\bin\Debug\ObjectCompare.exe
+E:\MyProject\ObjectCompare\ObjectCompares\ObjectCompare\bin\Debug\ObjectCompare.pdb
+E:\MyProject\ObjectCompare\ObjectCompares\ObjectCompare\obj\Debug\ObjectCompare.csprojResolveAssemblyReference.cache
