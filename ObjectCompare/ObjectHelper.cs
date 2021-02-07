@@ -7,7 +7,6 @@ using System.Runtime.Serialization.Formatters.Binary;
 /*
 * 项目名称 ：ObjectCompare
 * 类 名 称 ：ObjectHelper
-* 所在的域 ：HYTCH
 * 命名空间 ：ObjectCompare
 * 机器名称 ：CUIPP 
 * CLR 版本 ：4.0.30319.42000
@@ -84,7 +83,8 @@ namespace ObjectCompare
                 }
                 else
                 {
-                    return CompareProperties(po.GetValue(obj1), po.GetValue(obj2), po.PropertyType);
+                    var b = CompareProperties(po.GetValue(obj1), po.GetValue(obj2), po.PropertyType);
+                    if(!b) return false;
                 }
             }
 
